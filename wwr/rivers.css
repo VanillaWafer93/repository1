@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --heading-font: "Macondo";
+    --paragraph-font: Montserrat, Helvetica, sans-serif;
+}
+#all_content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    padding: 35px;
+}
+body {
+    background-color: #EAE2B7;
+    font-family: var(--heading-font);
+}
+.logo {
+    width: 80px;
+}
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #14452f;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a:hover {
+    background-color: #003049;
+    color: white;
+}
+#header h1 {
+    text-align: center;
+    font-size: 50px;
+}
+.content_for_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+}
+.rafting_salmon_image , .rafting_desolation_image , .rafting_arizona_image {
+    width: 75%;
+    border: 10px solid black;
+    box-shadow: 5px 5px 10px #6f7364;
+    transition: transform .5s;
+}
+.salmon_text , .desolation_text , .arizona_text {
+    font-family: var(--paragraph-font);
+    margin: 50px;
+    background-color: #003049;
+    padding: 10px;
+    color: white;
+}
+footer {
+    background-color: white;
+    padding: 25px 50px;
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--paragraph-font);
+}
+.rafting_salmon_image:hover , .rafting_desolation_image:hover , .rafting_arizona_image:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
